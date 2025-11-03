@@ -1,0 +1,172 @@
+/**
+ * form Styles
+ *
+ * @package Postali Child
+ * @author Postali LLC
+**/
+
+#gform_wrapper_1 {
+    p.gform_required_legend {
+        display: none;
+    }
+
+    .gfield_validation_message,
+    .validation_message {
+        background: none;
+        border: none;
+        margin-top: 8px;
+        padding: 0 !important;
+        line-height: 100% !important;
+        font-size: 12px !important;
+    }
+
+    .gform_validation_errors {
+        background: none;
+        border: none;
+        border-radius: 5px;
+        box-shadow: none;
+        margin-bottom: 8px;
+        margin-top: 8px;
+        padding: 0 0 0 48px;
+        position: relative;
+        width: 100%;
+
+        h2 {
+            color: white;
+            font-size: 13.2px;
+            font-weight: 500;
+            line-height: 17.6px;
+            margin: 0 0 12px 0;
+        }
+    }
+
+    #gform_1 {
+        background: #eee;
+        padding: 10px;
+        border: 3px solid #c0bfbf;
+        margin-top: 10px;
+
+        
+
+        .gform_footer {
+            margin: 6px 0 0;
+            padding: 0;
+            
+            input[type="submit"] {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                padding: 5px 0;
+                box-sizing: border-box;
+                font-size: 20px;
+                border-radius: 0;
+                border: none;
+                background: #2b96c4;
+                text-transform: uppercase;
+                color: #fff;
+                letter-spacing: 1px;
+                font-weight: bold;
+                font-family: "Source Sans Pro",sans-serif;
+            }
+        }
+
+        .gfield_label {
+            display: inline-block;
+            margin-bottom: 5px;
+            padding: 0;
+            color: black;
+            font-size: 14px;
+            font-weight: normal;
+        }
+    }
+}
+
+#gform_wrapper_2 {
+    padding: 15px;
+    background: #f8f8f8;
+    margin-top: 5px;
+
+    .gfield_label {
+        display: inline-block;
+        font-size: 15px;
+        font-weight: normal;
+        margin-bottom: 8px;
+        padding: 0;
+    }
+
+    .gform_footer {
+        margin: 6px 0 0;
+        padding: 0;
+
+        input[type="submit"] {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: 5px 0;
+            box-sizing: border-box;
+            font-size: 20px;
+            border-radius: 0;
+            border: none;
+            background: #2b96c4;
+            text-transform: uppercase;
+            color: #fff;
+            letter-spacing: 1px;
+            font-weight: bold;
+            font-family: "Source Sans Pro",sans-serif;
+        }
+    }
+}
+
+#gform_wrapper_4 {
+    input[type="submit"] {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 5px 0;
+        box-sizing: border-box;
+        font-size: 20px;
+        border-radius: 0;
+        border: none;
+        background: #2b96c4;
+        text-transform: uppercase;
+        color: #fff;
+        letter-spacing: 1px;
+        font-weight: bold;
+        font-family: "Source Sans Pro",sans-serif;
+    }
+}
+
+#gform_wrapper_5 {
+    p.gform_required_legend {
+        display: none;
+    }
+
+    .gfield_label {
+        display: inline-block;
+        margin-bottom: 8px;
+        padding: 0;
+        color: white;
+        font-size: 15px;
+        font-weight: normal;
+    }
+
+    input[type="submit"] {
+        background: #2b96c4 url(/wp-content/themes/postali-child/images/footer_contact_envelope.png) no-repeat scroll 34px 9px/19% auto !important;
+        color: #fff !important;
+        font-size: 15px;
+        font-weight: 400;
+        height: auto !important;
+        margin: 0;
+        padding: 14px 50px 15px 90px !important;
+        text-transform: uppercase;
+        width: auto !important;
+        font-family: "Source Sans Pro",sans-serif;
+        letter-spacing: .2em;
+    }
+}

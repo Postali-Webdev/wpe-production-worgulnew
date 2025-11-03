@@ -1,0 +1,199 @@
+/**
+ * Web Font Styles, H Styles, Body Text Styles
+ *
+ * @package Postali Child
+ * @author Postali LLC
+**/
+
+/* import google fonts here */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Source+Sans+Pro:wght@400;700&display=swap');
+
+/* Fonts */
+body, h1, h2, h3, h4, h5, h6, p, a, ul {
+    // color: $body-text-color;
+} 
+p, a, ul, ol {
+
+}
+ul li, ol li {
+    margin: 0 0 0 20px;
+    font-size: 18px;
+}
+dl, blockquote, img {
+
+}
+
+a {
+    text-decoration:none;
+    -webkit-transition:$trans;
+    transition:$trans;
+    &:hover {
+        // color:$lt-red;
+        //text-decoration:none;
+    }
+}
+
+.btn {
+    display:inline-block;
+    padding:15px 40px;
+    // background-color:$lt-red;
+    text-decoration:none;
+    // color:$white;
+    // border:2px solid $lt-red;
+    transition:$trans;
+    &:hover {
+        // background-color:$dk-red;
+    }
+}
+
+.page-content {
+    ul,
+    ol {
+        width: 100%;
+        li {
+            font-size:16px;
+            line-height: 150%;
+            margin:10px 10px 10px 0 !important;
+            font-family: $serif;
+            color:$blk;
+            position:relative;
+            a {
+                font-weight: bold;
+                font-family: inherit;
+                color:$ltblue;
+            }
+        }
+    }
+    ul {
+        list-style-type:none;
+        li {
+            &::before {
+                position:absolute;
+                content:"\e916";
+                font-family: $icomoon;
+                left:-20px;
+                color:$ltblue;
+                font-size: 15px;
+                font-weight: normal;
+            }
+        }
+        &.default {
+            margin-left: 15px;
+            li {
+                &::before {
+                    content: "•";
+                    left:-15px;
+                }
+            }
+        }
+    }
+}
+
+p {
+    font-size:16px;
+    line-height: 150%;
+    margin:10px 0 !important;
+    font-family: $serif;
+    color:$blk;
+    a:not(.button) {
+        font-size: inherit;
+        font-weight: bold;
+        color:$ltblue;
+        font-family: inherit;
+        font-size: inherit;
+        text-decoration: underline;
+        &:hover {
+            color: $ltblue;
+            filter: brightness(1.1);
+        }
+    }
+    #email {
+        a {
+            word-break: break-word;
+        }
+    }
+}
+
+h1,
+.headline-text {
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: none;
+    text-shadow: 2px 2px 12px rgba(0,0,0,.5);
+    line-height: 100%;
+    max-width: 75%;
+    font-family: $sans;
+    color:$white;
+    @media screen and (max-width:$screen-sm) {
+        max-width: 100%;
+    }
+}
+
+h2, 
+h2 a {
+    color: $dkblue;
+    font-family: $sans;
+    font-size: 40px;
+    font-weight: 400 !important;
+    line-height: 100%;
+    text-transform: capitalize;
+    margin:10px 0 0 !important;
+}
+
+h3, 
+h3 a {
+    color: $dkblue;
+    font-family: $sans;
+    font-size: 30px;
+    font-weight: 400 !important;
+    line-height: 100%;
+    text-transform: capitalize;
+    margin:10px 0 0 !important;
+}
+
+h4 a {
+    color: $ltblue;
+    font-weight: bold;
+    &:hover {
+        color: $ltblue;
+        text-decoration: underline;
+    }
+}
+
+.excerpt p {
+    font-size: 24px;
+    font-family: $serif;
+    line-height: 130%;
+    color: $white;
+    margin: 0px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,.5);
+}
+
+#breadcrumbs {
+    padding: 30px 0 10px !important;
+    font-weight: 600;
+    margin: 0 !important;
+    span {
+        font-size: 12px !important;
+        font-family: $sans !important;
+        text-transform: uppercase;
+        font-weight: normal;
+        a {
+            color:$ltblue;
+        }
+    }
+}
+
+.post-meta {
+    span {
+        font-family: $serif;
+        font-size: 16px;
+        color:$blk;
+        line-height: 100%;
+        a {
+            color:$ltblue;
+            font-weight: bold;
+            font-family: inherit;
+        }
+    }
+}
