@@ -58,7 +58,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <!-- End Google Tag Manager (noscript) -->
 
 	<header>
-		<!-- GITHUB TEST -->
 		<div class="header-results">
 			<div class="container_inner" id="header-case-results">
 				<span class="results-headline"><span class="icon-Worgul-Icon-Gavel"></span> &nbsp;Case Results: </span>
