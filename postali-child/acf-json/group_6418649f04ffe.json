@@ -17,7 +17,8 @@
                 "id": ""
             },
             "placement": "left",
-            "endpoint": 0
+            "endpoint": 0,
+            "selected": 0
         },
         {
             "key": "field_641864b71476a",
@@ -45,6 +46,27 @@
             "preview_size": "medium"
         },
         {
+            "key": "field_641865021476c",
+            "label": "Headline",
+            "name": "hero_headline",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
             "key": "field_641864e61476b",
             "label": "In-Page Nav",
             "name": "hero_in_page_nav",
@@ -60,26 +82,6 @@
             },
             "layout": "block",
             "sub_fields": [
-                {
-                    "key": "field_641865021476c",
-                    "label": "Left Copy",
-                    "name": "left_copy",
-                    "aria-label": "",
-                    "type": "wysiwyg",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "tabs": "all",
-                    "toolbar": "full",
-                    "media_upload": 1,
-                    "delay": 0
-                },
                 {
                     "key": "field_6418650e1476d",
                     "label": "Navigation",
@@ -163,7 +165,8 @@
                 "id": ""
             },
             "placement": "left",
-            "endpoint": 0
+            "endpoint": 0,
+            "selected": 0
         },
         {
             "key": "field_641865eade020",
@@ -206,6 +209,45 @@
             "delay": 0
         },
         {
+            "key": "field_690a3b716f177",
+            "label": "Testimonial",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0,
+            "selected": 0
+        },
+        {
+            "key": "field_690a3b806f178",
+            "label": "Testimonial",
+            "name": "testimonial",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "Include quote and awards",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "allow_in_bindings": 1,
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
             "key": "field_64186694de022",
             "label": "Panel 2 (Video Embed)",
             "name": "",
@@ -220,7 +262,8 @@
                 "id": ""
             },
             "placement": "left",
-            "endpoint": 0
+            "endpoint": 0,
+            "selected": 0
         },
         {
             "key": "field_641866a3de023",
@@ -247,8 +290,8 @@
             "label": "Right Column Video",
             "name": "p2_right_column_video",
             "aria-label": "",
-            "type": "wysiwyg",
-            "instructions": "Include Iframe code for video embed",
+            "type": "text",
+            "instructions": "Paste YouTube video ID here.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -257,10 +300,11 @@
                 "id": ""
             },
             "default_value": "",
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1,
-            "delay": 0
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         },
         {
             "key": "field_64186d56fe6b9",
@@ -277,7 +321,29 @@
                 "id": ""
             },
             "placement": "left",
-            "endpoint": 0
+            "endpoint": 0,
+            "selected": 0
+        },
+        {
+            "key": "field_690a3ea2f822b",
+            "label": "Section Title",
+            "name": "p3_section_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 1,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         },
         {
             "key": "field_64186d7dfe6ba",
@@ -326,7 +392,7 @@
         },
         {
             "key": "field_64186dcafe6bc",
-            "label": "Panel 4 (Why Us)",
+            "label": "Panel 4 (Local Matters)",
             "name": "",
             "aria-label": "",
             "type": "tab",
@@ -339,7 +405,8 @@
                 "id": ""
             },
             "placement": "left",
-            "endpoint": 0
+            "endpoint": 0,
+            "selected": 0
         },
         {
             "key": "field_64186de2fe6bd",
@@ -366,7 +433,7 @@
             "label": "Intro Copy",
             "name": "p4_intro_copy",
             "aria-label": "",
-            "type": "textarea",
+            "type": "wysiwyg",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -376,10 +443,131 @@
                 "id": ""
             },
             "default_value": "",
+            "allow_in_bindings": 0,
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_690a450c1e45e",
+            "label": "Map \/ Contact \/ Form Panel",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0,
+            "selected": 0
+        },
+        {
+            "key": "field_690a451f1e45f",
+            "label": "Copy Block",
+            "name": "maps_copy",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "allow_in_bindings": 1,
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_690a45391e460",
+            "label": "Map Embed",
+            "name": "maps_embed",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Only paste the src attribute, not the entire iframe.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
             "maxlength": "",
-            "rows": "",
+            "allow_in_bindings": 0,
             "placeholder": "",
-            "new_lines": ""
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_690a4dbb57119",
+            "label": "Address Block",
+            "name": "address_copy",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "allow_in_bindings": 1,
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_690a45491e461",
+            "label": "Form Embed",
+            "name": "maps_form",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Form shortcode",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_690a4986abab6",
+            "label": "Panel 4a (Why Our Attorneys)",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0,
+            "selected": 0
         },
         {
             "key": "field_64186e18fe6bf",
@@ -441,7 +629,8 @@
                 "id": ""
             },
             "placement": "left",
-            "endpoint": 0
+            "endpoint": 0,
+            "selected": 0
         },
         {
             "key": "field_64186e7efe6c2",
@@ -599,7 +788,8 @@
                 "id": ""
             },
             "placement": "left",
-            "endpoint": 0
+            "endpoint": 0,
+            "selected": 0
         },
         {
             "key": "field_64187038fe6ca",
@@ -626,7 +816,7 @@
             "label": "Section Intro Copy",
             "name": "p6_section_intro_copy",
             "aria-label": "",
-            "type": "textarea",
+            "type": "wysiwyg",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -636,10 +826,11 @@
                 "id": ""
             },
             "default_value": "",
-            "maxlength": "",
-            "rows": "",
-            "placeholder": "",
-            "new_lines": ""
+            "allow_in_bindings": 0,
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
         },
         {
             "key": "field_64187063fe6cc",
@@ -655,7 +846,7 @@
                 "class": "",
                 "id": ""
             },
-            "return_format": "array",
+            "return_format": "url",
             "library": "all",
             "min_width": "",
             "min_height": "",
@@ -664,6 +855,7 @@
             "max_height": "",
             "max_size": "",
             "mime_types": "",
+            "allow_in_bindings": 1,
             "preview_size": "medium"
         },
         {
@@ -701,80 +893,16 @@
                 "id": ""
             },
             "placement": "left",
-            "endpoint": 0
+            "endpoint": 0,
+            "selected": 0
         },
         {
-            "key": "field_6418716bfe6d1",
-            "label": "Section Title",
-            "name": "p7_section_title",
-            "aria-label": "",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
-        },
-        {
-            "key": "field_64187119fe6cf",
-            "label": "List Boxes",
-            "name": "p7_list_boxes",
-            "aria-label": "",
-            "type": "repeater",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "layout": "table",
-            "pagination": 0,
-            "min": 3,
-            "max": 3,
-            "collapsed": "",
-            "button_label": "Add Row",
-            "rows_per_page": 20,
-            "sub_fields": [
-                {
-                    "key": "field_64187159fe6d0",
-                    "label": "Copy",
-                    "name": "copy",
-                    "aria-label": "",
-                    "type": "wysiwyg",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "tabs": "all",
-                    "toolbar": "full",
-                    "media_upload": 1,
-                    "delay": 0,
-                    "parent_repeater": "field_64187119fe6cf"
-                }
-            ]
-        },
-        {
-            "key": "field_64187179fe6d2",
-            "label": "Contact Button",
-            "name": "p7_contact_button",
+            "key": "field_690a6020ebd19",
+            "label": "Left Column",
+            "name": "p7_left_column",
             "aria-label": "",
             "type": "wysiwyg",
-            "instructions": "Add accordion code for contact form",
+            "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -783,15 +911,16 @@
                 "id": ""
             },
             "default_value": "",
+            "allow_in_bindings": 0,
             "tabs": "all",
             "toolbar": "full",
             "media_upload": 1,
             "delay": 0
         },
         {
-            "key": "field_641871bffe6d3",
-            "label": "Quad Copy Section",
-            "name": "p7_quad_copy_section",
+            "key": "field_690a603bebd1a",
+            "label": "Right Column Accordions",
+            "name": "p7_accordions",
             "aria-label": "",
             "type": "repeater",
             "instructions": "",
@@ -804,18 +933,18 @@
             },
             "layout": "table",
             "pagination": 0,
-            "min": 4,
-            "max": 4,
+            "min": 0,
+            "max": 0,
             "collapsed": "",
             "button_label": "Add Row",
             "rows_per_page": 20,
             "sub_fields": [
                 {
-                    "key": "field_6418747ea891f",
-                    "label": "Copy",
-                    "name": "copy",
+                    "key": "field_690a6051ebd1b",
+                    "label": "Question",
+                    "name": "question",
                     "aria-label": "",
-                    "type": "wysiwyg",
+                    "type": "text",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -825,11 +954,33 @@
                         "id": ""
                     },
                     "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_690a603bebd1a"
+                },
+                {
+                    "key": "field_690a605bebd1c",
+                    "label": "Answer",
+                    "name": "answer",
+                    "aria-label": "",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
                     "tabs": "all",
                     "toolbar": "full",
                     "media_upload": 1,
+                    "default_value": "",
                     "delay": 0,
-                    "parent_repeater": "field_641871bffe6d3"
+                    "parent_repeater": "field_690a603bebd1a"
                 }
             ]
         },
@@ -848,7 +999,8 @@
                 "id": ""
             },
             "placement": "left",
-            "endpoint": 0
+            "endpoint": 0,
+            "selected": 0
         },
         {
             "key": "field_641874e9a8921",
@@ -875,7 +1027,7 @@
             "label": "Intro Copy",
             "name": "p8_intro_copy",
             "aria-label": "",
-            "type": "textarea",
+            "type": "wysiwyg",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -885,10 +1037,11 @@
                 "id": ""
             },
             "default_value": "",
-            "maxlength": "",
-            "rows": "",
-            "placeholder": "",
-            "new_lines": ""
+            "allow_in_bindings": 0,
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
         },
         {
             "key": "field_64187525a8923",
@@ -904,7 +1057,7 @@
                 "class": "",
                 "id": ""
             },
-            "return_format": "array",
+            "return_format": "url",
             "library": "all",
             "min_width": "",
             "min_height": "",
@@ -913,6 +1066,7 @@
             "max_height": "",
             "max_size": "",
             "mime_types": "",
+            "allow_in_bindings": 1,
             "preview_size": "medium"
         },
         {
@@ -977,7 +1131,7 @@
         },
         {
             "key": "field_641875a2a8927",
-            "label": "Panel 9 (Hiring)",
+            "label": "Panel 9 (Experienced)",
             "name": "",
             "aria-label": "",
             "type": "tab",
@@ -990,7 +1144,8 @@
                 "id": ""
             },
             "placement": "left",
-            "endpoint": 0
+            "endpoint": 0,
+            "selected": 0
         },
         {
             "key": "field_641875b4a8928",
@@ -1013,94 +1168,9 @@
             "append": ""
         },
         {
-            "key": "field_641875bea8929",
-            "label": "Intro Copy",
-            "name": "p9_intro_copy",
-            "aria-label": "",
-            "type": "textarea",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "maxlength": "",
-            "rows": "",
-            "placeholder": "",
-            "new_lines": ""
-        },
-        {
-            "key": "field_641875caa892a",
-            "label": "Banner Image",
-            "name": "p9_banner_image",
-            "aria-label": "",
-            "type": "image",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "array",
-            "library": "all",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": "",
-            "preview_size": "medium"
-        },
-        {
-            "key": "field_641875e9a892b",
-            "label": "Floating Copy",
-            "name": "p9_floating_copy",
-            "aria-label": "",
-            "type": "wysiwyg",
-            "instructions": "Floating modal appears over the banner",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1,
-            "delay": 0
-        },
-        {
-            "key": "field_64187605a892c",
-            "label": "Section 2 Title",
-            "name": "p9_section_2_title",
-            "aria-label": "",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
-        },
-        {
             "key": "field_64187619a892d",
-            "label": "Left Column CTA",
-            "name": "p9_left_column_cta",
+            "label": "Left Column Copy",
+            "name": "p9_left_column_copy",
             "aria-label": "",
             "type": "wysiwyg",
             "instructions": "",
@@ -1112,6 +1182,7 @@
                 "id": ""
             },
             "default_value": "",
+            "allow_in_bindings": 1,
             "tabs": "all",
             "toolbar": "full",
             "media_upload": 1,
@@ -1138,6 +1209,254 @@
             "delay": 0
         },
         {
+            "key": "field_690b604451371",
+            "label": "Hiring",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0,
+            "selected": 0
+        },
+        {
+            "key": "field_690b605051372",
+            "label": "Section Title",
+            "name": "hiring_section_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 1,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_690b60ca51373",
+            "label": "Intro Copy",
+            "name": "hiring_intro_copy",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "allow_in_bindings": 0,
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_690b60d751374",
+            "label": "Banner Image",
+            "name": "hiring_banner_image",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "allow_in_bindings": 1,
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_690b60ea51375",
+            "label": "Floating Copy",
+            "name": "hiring_floating_copy",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "Floating Modal appears over the modal",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "allow_in_bindings": 1,
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_690b632ea6db9",
+            "label": "Convicted",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0,
+            "selected": 0
+        },
+        {
+            "key": "field_690b6352a3c2d",
+            "label": "Section Title",
+            "name": "convicted_section_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 1,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_690b635da3c2e",
+            "label": "Left Column Copy",
+            "name": "convicted_left_column_copy",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "allow_in_bindings": 1,
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_690b6366a3c2f",
+            "label": "Right Column Copy",
+            "name": "convicted_right_column_copy",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "allow_in_bindings": 1,
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_690b644e9f4f2",
+            "label": "FAQs",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0,
+            "selected": 0
+        },
+        {
+            "key": "field_690b64589f4f3",
+            "label": "Left Column Copy",
+            "name": "faq_left_column_copy",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "allow_in_bindings": 1,
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_690b645b9f4f4",
+            "label": "Right Column Copy",
+            "name": "faq_right_column_copy",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "allow_in_bindings": 1,
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
             "key": "field_64187647a892f",
             "label": "Panel 10 (Team)",
             "name": "",
@@ -1152,7 +1471,8 @@
                 "id": ""
             },
             "placement": "left",
-            "endpoint": 0
+            "endpoint": 0,
+            "selected": 0
         },
         {
             "key": "field_64187658a8930",
@@ -1208,7 +1528,7 @@
                 "class": "",
                 "id": ""
             },
-            "return_format": "array",
+            "return_format": "url",
             "library": "all",
             "min_width": "",
             "min_height": "",
@@ -1217,6 +1537,7 @@
             "max_height": "",
             "max_size": "",
             "mime_types": "",
+            "allow_in_bindings": 1,
             "preview_size": "medium"
         },
         {
@@ -1245,7 +1566,7 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "page-front-acf.php"
+                "value": "front-page.php"
             }
         ]
     ],
@@ -1258,5 +1579,6 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1679496710
+    "display_title": "",
+    "modified": 1762354459
 }

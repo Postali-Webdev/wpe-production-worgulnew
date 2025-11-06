@@ -107,8 +107,10 @@ footer {
                     #menu-footer-menu {
                         list-style-type: none;
                         display: flex;
+                        flex-direction: column;
                         flex-wrap: wrap;
-                        margin: 0;
+                        margin: 30px 0 0 0;
+                        gap: 10px;
                         li {
                             margin: 0 0 3px !important;
                             a {
@@ -117,13 +119,10 @@ footer {
                                 color:$white;
                                 font-size: 14px;
                                 position: relative;
-                                &::after {
-                                    content: "|";
-                                    color:$white;
-                                    margin-left: 10px;
-                                }
+                                text-decoration: underline;
                                 &:hover {
                                     color:$white;
+                                    text-decoration: none;
                                 }
                             }
                             &:last-child {
@@ -131,22 +130,6 @@ footer {
                                     &::after {
                                         display:none;
                                     }
-                                }
-                            }
-                            &.site-design {
-                                margin-left: 20px !important;
-                                position: relative;
-                                &::before {
-                                    content: "\e913'";
-                                    color: $white;
-                                    position: absolute;
-                                    left: -20px;
-                                    font-size: 14px;
-                                    font-family: $icomoon;
-                                    font-size: 14px;
-                                    font-weight: normal;
-                                    top: 2px;
-                                    display:block !important
                                 }
                             }
                             &::before {
@@ -157,8 +140,8 @@ footer {
                     .footer-disclaimer {
                         font-family: $serif;
                         font-size: 11px;
-                        line-height: 110%;
-                        margin:15px 0 !important;
+                        line-height: 150%;
+                        margin:30px 0 !important;
                         color:$white;
                     }
                 }

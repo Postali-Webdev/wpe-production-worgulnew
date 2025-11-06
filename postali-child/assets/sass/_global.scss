@@ -65,7 +65,7 @@ a img {
 }
  
 body {
-    @media screen and (max-width: $screen-sm) {
+    @media screen and (max-width: $tab-port) {
         
     }
 }
@@ -85,14 +85,14 @@ a {
 	width:100%;
     box-sizing: border-box;
     margin:0 auto;
-    @media screen and (max-width: $screen-sm) {
+    @media screen and (max-width: $tab-port) {
         padding: 0 40px;
     }
 }
 
 section {
     padding: 80px 0;
-    @media screen and (max-width: $screen-sm) {
+    @media screen and (max-width: $tab-port) {
         padding: 60px 0;
     }
     @media screen and (max-width: $screen-xs) {
@@ -116,7 +116,7 @@ section {
 			width: 100%;
 			height: auto;
             min-height: 300px;
-            @media screen and (max-width:$screen-sm) {
+            @media screen and (max-width:$tab-port) {
                 height:auto;
                 padding-top: 40px;
             }
@@ -208,6 +208,9 @@ section {
 			margin:0 auto;
 			display:flex;
 		}
+        &.centered {
+			text-align: center;
+		}
 		&.row {
 			flex-direction: row;
 			justify-content: space-between;
@@ -220,19 +223,19 @@ section {
     }
     .column-40 {
         width:35%;
-        @media screen and (max-width:$screen-sm) {
+        @media screen and (max-width:$tab-port) {
           width:100%;
         }
     }
     .column-50 {
         width:45%;
-        @media screen and (max-width:$screen-sm) {
+        @media screen and (max-width:$tab-port) {
           width:100%;
         }
     }
     .column-60 {
         width:55%;
-        @media screen and (max-width:$screen-sm) {
+        @media screen and (max-width:$tab-port) {
           width:100%;
         }
     }
@@ -244,13 +247,13 @@ section {
     }
     .column-33 {
         width:30%;
-        @media screen and (max-width:$screen-sm) {
+        @media screen and (max-width:$tab-port) {
           width:100%;
         }
     }
     .column-66 {
         width:63%;
-        @media screen and (max-width:$screen-sm) {
+        @media screen and (max-width:$tab-port) {
           width:100%;
         }
     }
@@ -263,7 +266,7 @@ section {
     .column-full,
     .column-33,
     .column-66 {
-		@media screen and (max-width:$screen-sm) {
+		@media screen and (max-width:$tab-port) {
 			width:100%;
 		}
     }
@@ -721,7 +724,7 @@ div[itemprop="video"] {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    @media screen and (max-width:$screen-sm) {
+    @media screen and (max-width:$tab-port) {
         width:100%;
         right: 0;
         z-index: 0;
@@ -931,7 +934,8 @@ div[itemprop="video"] {
     position: relative;
     width: 100%;
     overflow: hidden;
-    padding-top: 56.25%;
+    aspect-ratio: 16 / 9;
+
     iframe {
         position: absolute;
         top: 0;
@@ -946,7 +950,7 @@ div[itemprop="video"] {
 
 #banner-container {
     h1 {
-        @media screen and (max-width: $screen-sm) {
+        @media screen and (max-width: $tab-port) {
             margin-top: 130px;
         }
         @media screen and (max-width: $screen-xs) {
@@ -987,4 +991,14 @@ div[itemprop="video"] {
     font-family: $sans;
     letter-spacing: 2.5px;
     font-size: 18px;
+}
+
+#ez-toc-container {
+    background: $ltgrey;
+    border-radius: 0;
+    padding: 10px 20px;
+    .ez-toc-title, .ez-toc-link {
+        font-family: $sans !important;
+        
+    }
 }

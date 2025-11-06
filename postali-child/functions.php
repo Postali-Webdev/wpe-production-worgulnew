@@ -129,7 +129,7 @@
 		$output = '<h2>Latest Results</h2>';
 		$output .= '<p class="featured-title">' . date('F Y') . ' Results </p>';
 		$recentpostquery = new WP_Query(array(
-			'post_type' => 'post',
+			'post_type' => 'results',
 			'posts_per_page' => 3
 		));
 		while ($recentpostquery->have_posts()) {
@@ -478,5 +478,37 @@ function postali_remove_customizer_additional_css_section( $wp_customize ) {
     }
 }
 add_action( 'customize_register', 'postali_remove_customizer_additional_css_section', 20 );
+
+// Shortcode: [search_offense_form]
+// Usage: [search_offense_form placeholder="Type..." button_text="Go" form_action="/search/" wrapper_class="form_holder"]
+function search_offense_form_shortcode( $atts = array() ) {
+	$atts = shortcode_atts( array(
+		'placeholder'    => 'Type your offense here...',
+		'button_text'    => 'Search',
+		'form_action'    => home_url( '/' ),
+		'wrapper_class'  => 'form_holder',
+		'input_id'       => 's',
+	), $atts, 'search_offense_form' );
+
+	$placeholder   = esc_attr( $atts['placeholder'] );
+	$button_text   = esc_html( $atts['button_text'] );
+	$action        = esc_url( $atts['form_action'] );
+	$wrapper_class = esc_attr( $atts['wrapper_class'] );
+	$input_id      = esc_attr( $atts['input_id'] );
+
+	$output  = '<div class="' . $wrapper_class . '">';
+	$output .= '<form action="' . $action . '" method="get">';
+	$output .= '<div class="form_holder_input">';
+	$output .= '<div style="width: 100%; max-width: 100%;">';
+	$output .= '<input id="' . $input_id . '" name="s" type="text" placeholder="' . $placeholder . '" />';
+	$output .= '</div>';
+	$output .= '</div>';
+	$output .= '<div class="form_holder_submit"><input type="submit" value="' . $button_text . '" /></div>';
+	$output .= '</form>';
+	$output .= '</div>';
+
+	return $output;
+}
+add_shortcode( 'search_offense_form', 'search_offense_form_shortcode' );
 
 ?>

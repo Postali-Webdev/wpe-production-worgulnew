@@ -126,7 +126,7 @@ header {
                         &:hover {
                             background: $menuhoverblue !important;
                             & > a {
-                                color: $menulinkhover !important;
+                                color: $white !important;
                             }
                             ul.sub-menu {
                                 display:flex;
@@ -282,7 +282,13 @@ header {
                                 height:auto;
                                 width:100%;
                                 &:hover {
-                                    background: $white !important;
+                                    background: $blue !important;
+                                    a {
+                                        color: $white !important;
+                                        &:hover {
+                                            color: $white !important;
+                                        }
+                                    }
                                     @media screen and (max-width:$screen-md) {
                                         background: none !important;
                                         a {
@@ -328,29 +334,13 @@ header {
                                         }
                                     }
                                 }
-                                &:hover {
-                                    background:$white;
-                                    transition: $trans;
-                                    a {
-                                        color:$menuhoverblue !important;
-                                        @media screen and (max-width:$screen-md) {
-                                            color: $white !important;
-                                        }
-                                        &:hover {
-                                            color:$menuhoverblue !important;
-                                            @media screen and (max-width:$screen-md) {
-                                                color: $white !important;   
-                                            }
-                                        }
-                                    }
-                                }
                                 ul.sub-menu {
                                     position: absolute !important;
                                     top: 0px !important;
                                     margin: 0;
                                     width: auto;
                                     display: none;
-                                    background: $white !important;
+                                    background: $ltblue !important;
                                     &.left {
                                         left:auto;
                                         right:100%;
@@ -377,7 +367,7 @@ header {
                                     }
                                     li {
                                         &:hover {
-                                            background: $grey !important;
+                                            background: $dkblue !important;
                                         }
                                         a {
                                             @media screen and (max-width:$screen-md) {

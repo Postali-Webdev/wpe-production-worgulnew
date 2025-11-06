@@ -16,6 +16,7 @@
     }
 
     #utility-desktop,
+    #header-top_right,
     .header-results,
     .phone_tab,
     footer,
@@ -33,6 +34,12 @@
 
     .header-bg {
         z-index: 2;
+    }
+
+    #header-top_left a,
+    p#header_logo_topfont a,
+    .attorney_blocks a {
+        pointer-events: none;
     }
 
     .container {

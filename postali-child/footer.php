@@ -12,17 +12,6 @@
     <div class="container">
         <div class="columns grid">
             <div class="footer-inner left">
-
-                <div class="spacer-15"></div>
-                <?php
-					$args = array(
-						'container' => false,
-						'theme_location' => 'footer-nav'
-					);
-					wp_nav_menu( $args );
-				?>
-                <div class="spacer-15"></div>
-
                 <?php if ( is_tree ('9275') ) { // Greensburg ?>
                     <?php $address = get_field('greensburg_address','options'); ?>
                     <?php $phone = get_field('greensburg_phone','options'); ?>
@@ -43,6 +32,14 @@
                 <p><strong>Worgul, Sarna & Ness, Criminal Defense Attorneys</strong></p>
                 <p><?php echo $address; ?></p>
                 <p><a href="tel:<?php echo $phone; ?>"><?php echo $phone; ?></a></p>
+
+                <?php
+					$args = array(
+						'container' => false,
+						'theme_location' => 'footer-nav'
+					);
+					wp_nav_menu( $args );
+				?>
 
             </div>
             <div class="footer-inner middle">

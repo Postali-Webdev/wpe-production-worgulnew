@@ -18,9 +18,11 @@ get_header(); ?>
 
 		<div class="columns">
 			<div class="column-66">
+				<?php echo do_shortcode('[ez-toc]'); ?>
 				<?php the_content(); ?>
 			</div>
             <div class="column-33">
+				<?php echo do_shortcode('[ez-toc device_target="mobile"]'); ?>
 				<?php get_template_part('block', 'sidebar-search');?>
 				<?php get_template_part('block', 'sidebar-category-pages');?>
 				<?php get_template_part('block', 'sidebar-awards');?>

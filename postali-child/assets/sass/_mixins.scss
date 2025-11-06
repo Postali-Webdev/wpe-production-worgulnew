@@ -5,6 +5,33 @@
  * @author Postali LLC
 **/
 
+@mixin respond($breakpoint) {
+    @if ($breakpoint==desktop-fulll) {
+        @media screen and (min-width:$desktop-full) { @content }
+    }
+
+    @if ($breakpoint==desktop-lg) {
+        @media screen and (max-width:$desktop-lg) { @content }
+    }
+
+    @if ($breakpoint==desktop) {
+        @media screen and (max-width:$desktop) { @content }
+    }
+
+    @if ($breakpoint==tab-land) {
+        @media screen and (max-width:$tab-land) { @content }
+    }
+
+    @if ($breakpoint==tab-port) {
+        @media screen and (max-width:$tab-port) { @content }
+    }
+
+    @if ($breakpoint==phone) {
+        @media screen and (max-width:$phone) { @content }
+    }
+    
+}
+
 @mixin plain_text_logo {
     .logo_no_animate { 	
         float: left; 
@@ -44,8 +71,6 @@
     }
     .safari-mac .logo_no_animate {
         -webkit-animation: none; 
-        -moz-animation: none; 
-        -o-animation: none; 
         animation: none;
     } 
     #header_logo {
@@ -117,8 +142,6 @@
         padding: 20px;
         margin-top: 10px;
         border: 3px solid #c0bfbf;
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
         box-sizing: border-box;
         overflow: hidden;
         display: block;
@@ -140,6 +163,22 @@
                     padding:10px;
                     width:100%;
                     box-sizing: border-box;
+                    &::-webkit-input-placeholder {
+                        font-family: $sans;
+                        font-size: 14px;
+                    }
+                    &::-moz-placeholder {
+                        font-family: $sans;
+                        font-size: 14px;
+                    }
+                    &:-ms-input-placeholder {
+                        font-family: $sans;
+                        font-size: 14px;
+                    }
+                    &::-ms-input-placeholder {
+                        font-family: $sans;
+                        font-size: 14px;
+                    }
                     &::placeholder {
                         font-family: $sans;
                         font-size: 14px;
