@@ -33,6 +33,7 @@
                 <p><?php echo $address; ?></p>
                 <p><a href="tel:<?php echo $phone; ?>"><?php echo $phone; ?></a></p>
 
+                <nav role="navigation">
                 <?php
 					$args = array(
 						'container' => false,
@@ -40,6 +41,7 @@
 					);
 					wp_nav_menu( $args );
 				?>
+                </nav>
 
             </div>
             <div class="footer-inner middle">

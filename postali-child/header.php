@@ -87,6 +87,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			
 			<div id="header-top_right">
 				<div id="header-top_menu">
+                    <nav role="navigation">
 					<?php 
 						$menu_found = false;
 						if( have_rows('assign_location_menus', 'options') ) {
@@ -114,6 +115,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 							wp_nav_menu( $args );	
 						}						
 					?>	
+                    </nav>
 					<div id="header-top_mobile">
 						<div id="menu-icon" class="toggle-nav">
 							<span class="line line-1"></span>
